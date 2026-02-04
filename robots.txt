@@ -1,0 +1,37 @@
+# Nevada Fashion Robots.txt
+# التعليمات للمحركات البحثية
+
+# السماح لجميع محركات البحث بالوصول
+User-agent: *
+Allow: /
+
+# قائمة الملفات التي يجب فهرستها
+Allow: *.html
+Allow: *.css
+Allow: *.js
+Allow: /images/
+
+# منع فهرسة ملفات معينة
+Disallow: /GUIDE.md
+Disallow: /README.md
+Disallow: /QUICK_START.txt
+Disallow: /START_HERE.txt
+Disallow: /TESTING_CHECKLIST.txt
+Disallow: /IMAGES_GUIDE.html
+Disallow: /SVG_IMAGES.txt
+Disallow: /PLACEHOLDER_IMAGES.txt
+Disallow: /00_READ_ME_FIRST.txt
+
+# تحديد ملف الـ Sitemap
+Sitemap: https://nevvada-fashion.netlify.app/sitemap.xml
+
+# تحديد سرعة الزحف (بالميلي ثانية)
+Crawl-delay: 1
+
+# Google Bot - سرعة أسرع
+User-agent: Googlebot
+Crawl-delay: 0
+
+# Bing Bot
+User-agent: Bingbot
+Crawl-delay: 1

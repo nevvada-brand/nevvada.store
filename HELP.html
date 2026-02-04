@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الاستخدام - Nevada Fashion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            direction: rtl;
+            background: linear-gradient(135deg, #faf8f6 0%, #f0e8e6 100%);
+            padding: 2rem;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #d4a5a5;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        h2 {
+            color: #2c2c2c;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-right: 4px solid #d4a5a5;
+            padding-right: 1rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #faf8f6;
+            border-radius: 10px;
+            border-left: 4px solid #d4a5a5;
+        }
+        
+        .step {
+            background: white;
+            padding: 1rem;
+            margin: 0.8rem 0;
+            border-radius: 8px;
+            border-right: 3px solid #d4a5a5;
+        }
+        
+        .step strong {
+            color: #d4a5a5;
+        }
+        
+        code {
+            background: #f5f5f5;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #c08e8e;
+        }
+        
+        ul, ol {
+            margin: 1rem 2rem;
+        }
+        
+        li {
+            margin: 0.5rem 0;
+        }
+        
+        .checklist {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .checklist-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #d4a5a5;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .checkbox:hover {
+            background: #f5d4d4;
+        }
+        
+        .tip {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        
+        .success {
+            background: #d4f1d4;
+            border-left: 4px solid #4caf50;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            text-align: center;
+            color: #2e7d32;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: #d4a5a5;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #c08e8e;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: #999;
+        }
+        
+        .btn-secondary:hover {
+            background: #777;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e8e1dd;
+            color: #666;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+            margin: 0 0.3rem;
+        }
+        
+        .file-list {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        
+        .file-list pre {
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="emoji">✨</span> Nevada Fashion <span class="emoji">✨</span></h1>
+        <p class="subtitle">دليل الاستخدام والبدء السريع</p>
+        
+        <!-- البدء السريع -->
+        <div class="section">
+            <h2><span class="emoji">🚀</span> البدء السريع</h2>
+            <div class="step">
+                <strong>1. فتح الموقع</strong>
+                <p>انقري على ملف <code>index.html</code> أو اسحبيه للمتصفح</p>
+            </div>
+            <div class="step">
+                <strong>2. استكشاف الموقع</strong>
+                <p>تصفحي الصفحات المختلفة باستخدام القائمة العلوية</p>
+            </div>
+            <div class="step">
+                <strong>3. تجربة الوضع الليلي</strong>
+                <p>اضغطي الزر <code>🌙</code> في أعلى يمين الصفحة</p>
+            </div>
+        </div>
+        
+        <!-- هيكل المشروع -->
+        <div class="section">
+            <h2><span class="emoji">📁</span> هيكل المشروع</h2>
+            <div class="file-list">
+                <pre>nevada-fashion/
+├── index.html           ← الصفحة الرئيسية
+├── products.html        ← صفحة المنتجات
+├── about.html           ← صفحة من نحن
+├── contact.html         ← صفحة التواصل
+├── css/
+│   └── style.css        ← الأنماط والألوان
+├── js/
+│   ├── main.js          ← الوظائف التفاعلية
+│   └── config.js        ← الإعدادات (اختياري)
+└── images/
+    ├── product1.jpg - product6.jpg
+    └── logo.png (اختياري)</pre>
+            </div>
+            <div class="tip">
+                <strong><span class="emoji">💡</span> نصيحة:</strong> 
+                كل الملفات موجودة! لا تحتاجين لتحميل شيء إضافي.
+            </div>
+        </div>
+        
+        <!-- التعديل على المنتجات -->
+        <div class="section">
+            <h2><span class="emoji">✏️</span> كيفية التعديل على المنتجات</h2>
+            
+            <h3 style="color: #c08e8e; margin: 1rem 0;">1. تغيير اسم المنتج</h3>
+            <p>افتحي <code>index.html</code> بمحرر أكواد وابحثي عن:</p>
+            <code style="display: block; padding: 1rem; background: #f5f5f5; margin: 1rem 0; border-radius: 5px;">
+                &lt;h3 class="product-name"&gt;فستان أسود أنيق&lt;/h3&gt;
+            </code>
+            <p>غيريه إلى:</p>
+            <code style="display: block; padding: 1rem; background: #f5f5f5; margin: 1rem 0; border-radius: 5px;">
+                &lt;h3 class="product-name"&gt;اسم المنتج الجديد&lt;/h3&gt;
+            </code>
+            
+            <h3 style="color: #c08e8e; margin: 1.5rem 0;">2. تغيير صورة المنتج</h3>
+            <ol>
+                <li>ضعي صورتك في مجلد <code>images/</code></li>
+                <li>سميها <code>product1.jpg</code></li>
+                <li>احفظي واضغطي F5 في المتصفح</li>
+            </ol>
+            
+            <h3 style="color: #c08e8e; margin: 1.5rem 0;">3. تغيير رابط الفيديو</h3>
+            <p>ابحثي عن:</p>
+            <code style="display: block; padding: 1rem; background: #f5f5f5; margin: 1rem 0; border-radius: 5px; word-break: break-all;">
+                https://www.instagram.com/reel/XXXXX/
+            </code>
+            <p>غيري <code>XXXXX</code> برقم الـ Reel الصحيح من Instagram</p>
+        </div>
+        
+        <!-- تغيير الألوان -->
+        <div class="section">
+            <h2><span class="emoji">🎨</span> تغيير الألوان</h2>
+            <p>افتحي ملف <code>css/style.css</code> وابحثي عن:</p>
+            <code style="display: block; padding: 1rem; background: #f5f5f5; margin: 1rem 0; border-radius: 5px;">
+                :root { --accent-color: #d4a5a5; }
+            </code>
+            <p>الألوان الرئيسية:</p>
+            <ul>
+                <li><code>--bg-primary</code> = خلفية الصفحة</li>
+                <li><code>--accent-color</code> = لون الأزرار والتمييز</li>
+                <li><code>--text-primary</code> = لون النصوص</li>
+            </ul>
+            <div class="tip">
+                <strong><span class="emoji">💡</span> نصيحة:</strong> 
+                غيري الألوان وسترين التأثير على كل الصفحات مباشرة!
+            </div>
+        </div>
+        
+        <!-- الوضع الليلي -->
+        <div class="section">
+            <h2><span class="emoji">🌙</span> الوضع الليلي (Dark Mode)</h2>
+            <p>الميزة تعمل تلقائياً! لا تحتاجين لفعل شيء.</p>
+            <ul>
+                <li>اضغطي الزر <code>🌙</code> لتبديل الوضع</li>
+                <li>الاختيار يُحفظ تلقائياً</li>
+                <li>عند العودة، سترين نفس الوضع</li>
+            </ul>
+            <div class="success">
+                <strong>✓</strong> Dark Mode جاهز وعامل بمظهر احترافي!
+            </div>
+        </div>
+        
+        <!-- قائمة التحقق -->
+        <div class="section">
+            <h2><span class="emoji">📋</span> قائمة التحقق قبل النشر</h2>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>تحميل جميع صور المنتجات</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>تعديل أسماء المنتجات</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>إضافة روابط Instagram Reels</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>اختبار الموقع على الهاتف</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>اختبار الوضع الليلي</span>
+                </div>
+                <div class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span>اختبار جميع الأزرار</span>
+                </div>
+            </div>
+            <script>
+                document.querySelectorAll('.checkbox').forEach(checkbox => {
+                    checkbox.addEventListener('click', function() {
+                        this.textContent = this.textContent ? '' : '✓';
+                        this.style.backgroundColor = this.textContent ? '#d4f1d4' : 'white';
+                        this.style.color = '#4caf50';
+                    });
+                });
+            </script>
+        </div>
+        
+        <!-- الملفات الهامة -->
+        <div class="section">
+            <h2><span class="emoji">📚</span> ملفات التوثيق المهمة</h2>
+            <ul>
+                <li><strong>README.md</strong> - شرح شامل للمشروع</li>
+                <li><strong>GUIDE.md</strong> - دليل تفصيلي للتعديلات</li>
+                <li><strong>QUICK_START.txt</strong> - بدء سريع</li>
+                <li><strong>IMAGES_GUIDE.html</strong> - دليل إضافة الصور</li>
+            </ul>
+        </div>
+        
+        <!-- الأسئلة الشائعة -->
+        <div class="section">
+            <h2><span class="emoji">❓</span> الأسئلة الشائعة</h2>
+            
+            <div style="margin: 1.5rem 0;">
+                <strong>س: الصور لا تظهر؟</strong>
+                <p>ج: تأكدي من أن الملف موجود في مجلد <code>images/</code> واسمه صحيح (product1.jpg)</p>
+            </div>
+            
+            <div style="margin: 1.5rem 0;">
+                <strong>س: الروابط لا تعمل؟</strong>
+                <p>ج: تأكدي من نسخ الرابط كاملاً بدون فراغات (https://www.instagram.com/...)</p>
+            </div>
+            
+            <div style="margin: 1.5rem 0;">
+                <strong>س: كيف أسرع الموقع؟</strong>
+                <p>ج: استخدمي TinyPNG.com لضغط الصور قبل الرفع</p>
+            </div>
+            
+            <div style="margin: 1.5rem 0;">
+                <strong>س: هل يمكن إضافة منتجات أكثر من 6؟</strong>
+                <p>ج: نعم! انسخي أكواد البطاقة وأضيفيها (اتبعي نفس الهيكل)</p>
+            </div>
+        </div>
+        
+        <!-- النصائح الأخيرة -->
+        <div class="section">
+            <h2><span class="emoji">⚡</span> نصائح مهمة</h2>
+            <div class="warning">
+                <strong>⚠️ تحذير:</strong> تجنبي تغيير أسماء الملفات الأساسية (index.html, style.css, main.js)
+            </div>
+            <div class="tip">
+                <strong>💡 نصيحة:</strong> احفظي تغييراتك بـ Ctrl+S وأعيدي تحميل الصفحة بـ F5
+            </div>
+            <div class="tip">
+                <strong>💡 نصيحة:</strong> اختبري الموقع على هاتفك قبل النشر (اضغط F12 وأختاري Device Mode)
+            </div>
+        </div>
+        
+        <!-- النشر -->
+        <div class="section">
+            <h2><span class="emoji">🌐</span> نشر الموقع على الإنترنت</h2>
+            <p>خيارات مجانية وسهلة:</p>
+            <ul>
+                <li><strong>Netlify</strong> - اسحبي الملفات وانشري</li>
+                <li><strong>Vercel</strong> - للمشاريع الاحترافية</li>
+                <li><strong>GitHub Pages</strong> - للمشاريع مفتوحة المصدر</li>
+                <li><strong>Surge.sh</strong> - الأسهل والأسرع</li>
+            </ul>
+        </div>
+        
+        <div class="success">
+            <h2 style="border: none; color: #2e7d32; margin-top: 0;">
+                <span class="emoji">🎉</span> موقعك جاهز الآن! <span class="emoji">✨</span>
+            </h2>
+            <p>استمتعي ببناء متجرك الحصري!</p>
+        </div>
+        
+        <div class="button-group">
+            <a href="index.html" class="btn">اذهبي للموقع الرئيسي</a>
+            <button class="btn btn-secondary" onclick="window.print()">طباعة هذا الدليل</button>
+        </div>
+        
+        <footer>
+            <p>Nevada Fashion - دليل الاستخدام</p>
+            <p>تم الإنشاء في فبراير 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

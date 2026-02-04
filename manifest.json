@@ -1,0 +1,113 @@
+{
+  "name": "Nevada Fashion - موقع الملابس النسائية",
+  "short_name": "Nevada Fashion",
+  "description": "موقع عرض الملابس النسائية براقة وأنيقة",
+  "start_url": "https://nevvada-fashion.netlify.app/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#d4a5a5",
+  "background_color": "#faf8f6",
+  "categories": ["shopping", "e-commerce"],
+  "lang": "ar",
+  "dir": "rtl",
+  
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  
+  "screenshots": [
+    {
+      "src": "/images/screenshot-540x720.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshot-1280x720.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "name": "المنتجات",
+      "short_name": "المنتجات",
+      "description": "عرض جميع المنتجات",
+      "url": "/products.html",
+      "icons": [
+        {
+          "src": "/images/product-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "من نحن",
+      "short_name": "من نحن",
+      "description": "معلومات عن Nevada Fashion",
+      "url": "/about.html",
+      "icons": [
+        {
+          "src": "/images/about-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "التواصل",
+      "short_name": "التواصل",
+      "description": "طرق التواصل معنا",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "/images/contact-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  
+  "share_target": {
+    "action": "https://www.instagram.com/nevvada.store/",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  
+  "screenshots_explanation": "لاستخدام screenshots، تأكدي من:1. حفظ الصور في مجلد images/2. استخدام صيغ PNG3. الأبعاد الصحيحة (540x720 للهاتف، 1280x720 للتابلت)",
+  
+  "note": "لاستخدام manifest.json بشكل كامل:1. أضيفي هذا إلى رأس الصفحة HTML: <link rel='manifest' href='/manifest.json'>2. أضيفي: <meta name='theme-color' content='#d4a5a5'>3. أضيفي icon و apple-touch-icon"
+}

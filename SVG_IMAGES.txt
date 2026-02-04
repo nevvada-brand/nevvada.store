@@ -1,0 +1,98 @@
+<!-- 
+هذا الملف يحتوي على أكواد SVG بسيطة يمكن استخدامها كصور تجريبية
+استخدم أي من هذه الأكواد في ملف HTML لإنشاء صور ملونة بدلاً من الصور الحقيقية
+أو استبدل هذه الصور برسومات حقيقية لاحقاً
+-->
+
+<!-- Product 1 - فستان أسود -->
+<!-- ضعي هذا الكود بدلاً من <img src="images/product1.jpg"> -->
+<svg width="100%" height="100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c2c2c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#grad1)"/>
+  <text x="150" y="150" font-size="60" fill="white" text-anchor="middle" dy=".3em">👗</text>
+</svg>
+
+<!-- Product 2 - بلوزة وردية -->
+<svg width="100%" height="100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5d4d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8b8b8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#grad2)"/>
+  <text x="150" y="150" font-size="60" fill="white" text-anchor="middle" dy=".3em">👕</text>
+</svg>
+
+<!-- Product 3 - جاكيت بيج -->
+<svg width="100%" height="100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4c5b9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c4b5a8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#grad3)"/>
+  <text x="150" y="150" font-size="60" fill="white" text-anchor="middle" dy=".3em">🧥</text>
+</svg>
+
+<!-- Product 4 - فستان كحلي -->
+<svg width="100%" height="100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a4a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1a3a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#grad4)"/>
+  <text x="150" y="150" font-size="60" fill="#ffd700" text-anchor="middle" dy=".3em">✨</text>
+</svg>
+
+<!-- Product 5 - قميص أبيض -->
+<svg width="100%" height="100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#grad5)"/>
+  <text x="150" y="150" font-size="60" fill="#d4a5a5" text-anchor="middle" dy=".3em">👔</text>
+</svg>
+
+<!-- Product 6 - فستان جينز -->
+<svg width="100%" height="100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a6fa5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c4a7a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#grad6)"/>
+  <text x="150" y="150" font-size="60" fill="white" text-anchor="middle" dy=".3em">👖</text>
+</svg>
+
+<!-- 
+ملاحظات مهمة:
+
+1. يمكنك استخدام أي من هذه الرموز التعبيرية:
+   👗 فستان  |  👕 بلوزة  |  🧥 جاكيت  |  👔 ربطة عنق  |  👖 بنطلون
+   👠 حذاء  |  👜 حقيبة  |  🎀 شريط  |  ✨ براق  |  💎 الماس
+
+2. طريقة الاستخدام:
+   - بدلاً من: <img src="images/product1.jpg" alt="...">
+   - استخدم: <div style="background: url('data:image/svg+xml,...')"></div>
+
+3. أو استخدم الأكواد SVG مباشرة في ملف HTML
+   - قص هذه الأكواد مباشرة في مكان صورة المنتج
+
+4. للحصول على صور حقيقية:
+   - استخدم مواقع مثل Unsplash أو Pexels
+   - ضع الصور في مجلد "images"
+   - غير اسم الملف في الكود
+-->
